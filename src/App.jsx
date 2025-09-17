@@ -1,7 +1,12 @@
 
 import MainPage from "./components/MainPage"
 import Catalog from "./components/Catalog"
-import { BrowserRouter, Routes, Route, Link } from "react-router"
+import AboutUs from "./components/AboutUs"
+import Contact from "./components/Contact"
+import Faq from "./components/Faq"
+import Wishlist from "./components/Wishlist"
+
+import { BrowserRouter, Routes, Route } from "react-router"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 
@@ -13,6 +18,10 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/catalog" element={<Catalog />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/faq"  element={<Faq />}/>
+          <Route path="/wishlist" element={<Wishlist/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
