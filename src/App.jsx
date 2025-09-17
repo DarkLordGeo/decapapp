@@ -1,17 +1,22 @@
 
 import MainPage from "./components/MainPage"
-import { BrowserRouter , Routes , Route } from "react-router"
+import Catalog from "./components/Catalog"
+import { BrowserRouter, Routes, Route, Link } from "react-router"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 function App() {
   return (
     <>
-      <Navbar/>
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<MainPage />} />
+          <Route path="/catalog" element={<Catalog />} />
         </Routes>
-      </BrowserRouter>,
+        <Footer />
+      </BrowserRouter>
+
     </>
   )
 }
