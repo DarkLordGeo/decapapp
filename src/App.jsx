@@ -15,14 +15,14 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/faq"  element={<Faq />}/>
-          <Route path="/wishlist" element={<Wishlist/>}/>
-        </Routes>
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/wishlist" element={<Wishlist />} />
+          </Routes>
         <Footer />
       </BrowserRouter>
 
