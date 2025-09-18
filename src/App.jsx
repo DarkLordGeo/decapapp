@@ -5,6 +5,7 @@ import AboutUs from "./components/AboutUs"
 import Contact from "./components/Contact"
 import Faq from "./components/Faq"
 import Wishlist from "./components/Wishlist"
+import ProductPage from "./components/ProductPage"
 
 import { BrowserRouter, Routes, Route } from "react-router"
 import Navbar from "./components/Navbar"
@@ -22,6 +23,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/:productId" element={<ProductPage />} />
+
           </Routes>
         <Footer />
       </BrowserRouter>
