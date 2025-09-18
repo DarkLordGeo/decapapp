@@ -1,20 +1,11 @@
+import BackgroundSection from "./BackgroundSection"
 import ProductCards from "./ProductCards"
+BackgroundSection
 function MainPage() {
     return (
         <>
-            <div className="relative h-screen w-full">
-                {/* Background image */}
-                <img
-                    src="https://eigensinnig-wien.com/cdn/shop/files/all-black-women-outfits-eigensinnig-wien.webp?v=1738449239"
-                    className="absolute inset-0 w-full h-full object-cover"
-                    alt="background"
-                />
-
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-
-                {/* Content (normal flow, not absolute) */}
-                <div className="relative z-10 flex items-center justify-between h-full text-white flex-col text-center">
+            <BackgroundSection imageUrl={'https://eigensinnig-wien.com/cdn/shop/files/all-black-women-outfits-eigensinnig-wien.webp?v=1738449239'}>
+                <div className="relative z-10 flex items-center justify-between h-full w-full text-white flex-col text-center">
                     <div className="w-full text-center py-32">
                         <h1 className="text-4xl text-white">Garter</h1>
                     </div>
@@ -28,7 +19,7 @@ function MainPage() {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </BackgroundSection>
             <ProductCards />
         </>
     )

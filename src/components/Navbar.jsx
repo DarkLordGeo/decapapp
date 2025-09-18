@@ -2,7 +2,6 @@ import { Link } from "react-router"
 
 function Navbar() {
 
-    // const navigate = useNavigate()
 
     return (
         <>

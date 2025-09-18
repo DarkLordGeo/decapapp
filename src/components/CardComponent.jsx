@@ -167,7 +167,6 @@ function CardComponent() {
                     </div>
                 </div>
             </div>
-
         </>
     )
 }
