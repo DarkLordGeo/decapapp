@@ -7,7 +7,7 @@ function ProductCards() {
                 <div className='text-center !py-12'>
                     <h1 className='text-3xl font-bold'>Latest goods</h1>
                 </div>
-                <div className='w-2/3 h-full grid grid-cols-3 grid-rows-2 gap-12 !mt-5'>
+                <div className='w-4/5 h-full grid place-items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-5 sm:gap-12 lg:gap-4 !mt-5'>
                     <CardComponent />
                 </div>
             </div>
