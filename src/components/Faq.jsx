@@ -5,7 +5,7 @@ function Faq() {
         <>
             <BackgroundSection height='auto' imageUrl={'https://eigensinnig-wien.com/cdn/shop/files/all-black-women-outfits-eigensinnig-wien.webp?v=1738449239'}>
                 <div
-                    class="relative w-full bg-white !px-6 !pt-10 !pb-8 !mt-72 !mb-32 sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10">
+                    class="relative w-4/5 lg:w-2/5 bg-white !px-6 !pt-10 !pb-8 !mt-72 !mb-32 sm:mx-auto rounded-lg">
                     <div class="!mx-2 !px-5">
                         <div class="flex flex-col items-center">
                             <h2 class="!mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl">FAQ</h2>
