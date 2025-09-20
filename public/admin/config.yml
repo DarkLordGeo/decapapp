@@ -51,7 +51,7 @@ collections:
                 widget: "string"
               - label: "About page description"
                 name: "about_page_description"
-                widget: "textarea"
+                widget: "text"
 
       - file: "content/contact/contact.json"
         label: "Contact page"
@@ -84,23 +84,21 @@ collections:
         label: "FAQ page"
         name: "faq_page"
         fields:
-          - label: "FAQ page"
-            name: "faq_page"
+          - label: "FAQ header"
+            name: "faq_header"
+            widget: "string"
+          - label: "FAQs"
+            name: "faqs"
+            widget: "list"
+            min: 3
             fields:
-              - label: "FAQ header"
-                name: "faq_header"
-                widget: "text"
-              - label: "faqs"
-                name: "faqs"
-                widget: "list"
-                min: 3
-                fields:
-                  - label: "FAQ question"
-                    name: "faq_question"
-                    widget: "string"
-                  - label: "FAQ answer"
-                    name: "faq_answer"
-                    widget: "string"
+              - label: "FAQ question"
+                name: "faq_question"
+                widget: "string"
+              - label: "FAQ answer"
+                name: "faq_answer"
+                widget: "markdown"
+
 
       - file: "content/wishlist/wishlist.json"
         label: "Wishlist page"
