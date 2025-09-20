@@ -1,0 +1,10 @@
+{
+  "contact_page": {
+    "contact_page_header": "Contact us",
+    "contact_page_description": "contact us on contact@usgmail.com",
+    "name_placeholder": "Name...",
+    "email_placeholder": "Email...",
+    "message_placeholder": "Message...",
+    "button_text": "Send message!"
+  }
+}
