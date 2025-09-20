@@ -24,7 +24,7 @@ collections:
             widget: "string"
           - label: "Main page text"
             name: "main_page_text"
-            widget: "markdown"
+            widget: "string"
           - label: "Main page available products"
             name: "main_page_products_list"
             widget: "list"
@@ -63,7 +63,7 @@ collections:
             widget: "string"
           - label: "Contact page description"
             name: "contact_page_description"
-            widget: "markdown"
+            widget: "string"
           - label: "Name placeholder"
             name: "name_placeholder"
             widget: "string"
@@ -108,10 +108,6 @@ collections:
         label: "Wishlist Page Content"
         name: "wishlist_page_content"
         fields:
-          - label: "Item"
-            name: "item"
-            widget: "string"
-
           - label: "Wishlist page header"
             name: "wishlist_page_header"
             widget: "string"
