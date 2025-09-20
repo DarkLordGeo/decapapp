@@ -11,78 +11,79 @@ editor:
   preview: false
 
 collections:
-  - label: "Garter cms"
-    name: "Garter cms"
+  # Main Page
+  - name: "main_page"
+    label: "Main Page"
     files:
       - file: "src/content/main/main.json"
-        label: "Main page"
-        name: "main_page"
+        label: "Main Page Content"
+        name: "main_page_content"
         fields:
-          - label: "Main page"
-            name: "main_page"
-            widget: "object"
+          - label: "Main page header"
+            name: "main_page_header"
+            widget: "string"
+          - label: "Main page text"
+            name: "main_page_text"
+            widget: "markdown"
+          - label: "Main page available products"
+            name: "main_page_products_list"
+            widget: "list"
+            min: 4
+            max: 4
             fields:
-              - label: "Main page header"
-                name: "main_page_header"
+              - label: "Product list"
+                name: "main_page_product_list"
                 widget: "string"
-              - label: "Main page text"
-                name: "main_page_text"
-                widget: "string"
-              - label: "Main page available products"
-                name: "main_page_products_list"
-                widget: "list"
-                min: 4
-                max: 4
-                fields:
-                  - label: "Product list"
-                    name: "main_page_product_list"
-                    widget: "string"
 
+  # About Page
+  - name: "about_page"
+    label: "About Page"
+    files:
       - file: "src/content/about/about.json"
-        label: "About page"
-        name: "about_page"
+        label: "About Page Content"
+        name: "about_page_content"
         fields:
-          - label: "About page"
-            name: "about_page"
-            widget: "object"
-            fields:
-              - label: "About page header"
-                name: "about_page_header"
-                widget: "string"
-              - label: "About page description"
-                name: "about_page_description"
-                widget: "markdown"
+          - label: "About page header"
+            name: "about_page_header"
+            widget: "string"
+          - label: "About page description"
+            name: "about_page_description"
+            widget: "markdown"
 
+  # Contact Page
+  - name: "contact_page"
+    label: "Contact Page"
+    files:
       - file: "src/content/contact/contact.json"
-        label: "Contact page"
-        name: "contact_page"
+        label: "Contact Page Content"
+        name: "contact_page_content"
         fields:
-          - label: "contact_page"
-            name: "contact_page"
-            widget: "object"
-            fields:
-              - label: "Contact page header"
-                name: "contact_page_header"
-                widget: "string"
-              - label: "Contact page description"
-                name: "contact_page_description"
-                widget: "string"
-              - label: "Name placeholder"
-                name: "name_placeholder"
-                widget: "string"
-              - label: "Email placeholder"
-                name: "email_placeholder"
-                widget: "string"
-              - label: "Message placeholder"
-                name: "message_placeholder"
-                widget: "string"
-              - label: "Button text"
-                name: "button_text"
-                widget: "string"
+          - label: "Contact page header"
+            name: "contact_page_header"
+            widget: "string"
+          - label: "Contact page description"
+            name: "contact_page_description"
+            widget: "markdown"
+          - label: "Name placeholder"
+            name: "name_placeholder"
+            widget: "string"
+          - label: "Email placeholder"
+            name: "email_placeholder"
+            widget: "string"
+          - label: "Message placeholder"
+            name: "message_placeholder"
+            widget: "string"
+          - label: "Button text"
+            name: "button_text"
+            widget: "string"
 
+  # FAQ Page
+  - name: "faq_page"
+    label: "FAQ Page"
+    files:
       - file: "src/content/faq/faq.json"
-        label: "FAQ page"
-        name: "faq_page"
+        label: "FAQ Page Content"
+        name: "faq_page_content"
         fields:
           - label: "FAQ header"
             name: "faq_header"
@@ -99,14 +100,25 @@ collections:
                 name: "faq_answer"
                 widget: "markdown"
 
+  # Wishlist Page
+  - name: "wishlist_page"
+    label: "Wishlist Page"
+    files:
       - file: "src/content/wishlist/wishlist.json"
-        label: "Wishlist page"
-        name: "wishlist_page"
+        label: "Wishlist Page Content"
+        name: "wishlist_page_content"
         fields:
-          - label: "Wishlist page"
-            name: "wishlist_page"
-            widget: "object"
+          - label: "Wishlist header"
+            name: "wishlist_header"
+            widget: "string"
+          - label: "Wishlist items"
+            name: "wishlist_items"
+            widget: "list"
             fields:
+              - label: "Item"
+                name: "item"
+                widget: "string"
+
               - label: "Wishlist page header"
                 name: "wishlist_page_header"
                 widget: "string"
