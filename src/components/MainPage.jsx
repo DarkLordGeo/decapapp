@@ -1,7 +1,38 @@
+import { useEffect, useState } from "react"
 import BackgroundSection from "./BackgroundSection"
 import ProductCards from "./ProductCards"
 
 function MainPage() {
+
+    const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const fetchDataForPosts = async () => {
+            try {
+                const response = await fetch(
+                    `/src/content/main/main.json`
+                );
+                if (!response.ok) {
+                    throw new Error(`HTTP error: Status ${response.status}`);
+                }
+                let postsData = await response.json();
+                setData(postsData);
+                setError(null);
+            } catch (err) {
+                setError(err.message);
+                setData(null);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchDataForPosts();
+    }, []);
+
+    console.log(data);
+
     return (
         <>
             <BackgroundSection imageUrl={'https://eigensinnig-wien.com/cdn/shop/files/all-black-women-outfits-eigensinnig-wien.webp?v=1738449239'}>
