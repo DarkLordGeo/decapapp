@@ -51,7 +51,7 @@ collections:
                 widget: "string"
               - label: "About page description"
                 name: "about_page_description"
-                widget: "string"
+                widget: "textarea"
 
       - file: "content/contact/contact.json"
         label: "Contact page"
@@ -68,18 +68,62 @@ collections:
                 name: "contact_page_description"
                 widget: "string"
               - label: "Name placeholder"
-                name: 'name_placeholder'
-                widget: 'string'
+                name: "name_placeholder"
+                widget: "string"
               - label: "Email placeholder"
-                name: 'email_placeholder'
-                widget: 'string'
+                name: "email_placeholder"
+                widget: "string"
               - label: "Message placeholder"
-                name: 'message_placeholder'
-                widget: 'string'
-              - label: 'Button text'
-                name: 'button_text'
-                widget: 'string'
-                  
+                name: "message_placeholder"
+                widget: "string"
+              - label: "Button text"
+                name: "button_text"
+                widget: "string"
 
-      # - file: "content/faq/faq.json"
-      # - file: "content/wishlist/wishlist.json"
+      - file: "content/faq/faq.json"
+        label: "FAQ page"
+        name: "faq_page"
+        fields:
+          - label: "FAQ page"
+            name: "faq_page"
+            fields:
+              - label: "FAQ header"
+                name: "faq_header"
+                widget: "text"
+              - label: "faqs"
+                name: "faqs"
+                widget: "list"
+                min: 3
+                fields:
+                  - label: "FAQ question"
+                    name: "faq_question"
+                    widget: "string"
+                  - label: "FAQ answer"
+                    name: "faq_answer"
+                    widget: "string"
+
+      - file: "content/wishlist/wishlist.json"
+        label: "Wishlist page"
+        name: "wishlist_page"
+        fields:
+          - label: "Wishlist page"
+            name: "wishlist_page"
+            fields:
+              - label: "Wishlist page header"
+                name: "wishlist_page_header"
+                widget: "string"
+              - label: "Wishlist page description"
+                name: "wishlist_page_description"
+                widget: "string"
+              - label: "Name placeholder"
+                name: "name_placeholder"
+                widget: "string"
+              - label: "Email placeholder"
+                name: "email_placeholder"
+                widget: "string"
+              - label: "Message placeholder"
+                name: "message_placeholder"
+                widget: "string"
+              - label: "Button text"
+                name: "button_text"
+                widget: "string"
