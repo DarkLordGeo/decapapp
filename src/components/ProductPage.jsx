@@ -19,7 +19,7 @@ function ProductPage() {
                             <ul className='flex gap-6'>
                                 <li className='w-12 h-12 text-center flex items-center justify-center rounded-full bg-gray-400/50 text-xl'>S</li>
                                 <li className='w-12 h-12 text-center flex items-center justify-center rounded-full bg-gray-400/50 text-xl'>S</li>
-                                
+
                             </ul>
                         </div>
 
