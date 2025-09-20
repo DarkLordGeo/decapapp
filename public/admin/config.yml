@@ -7,43 +7,52 @@ public_folder: "/uploads"
 
 site_url: "https://admirable-syrniki-686715.netlify.app/"
 display_url: "https://admirable-syrniki-686715.netlify.app/"
+editor:
+  preview: false
 
 collections:
   - label: "Garter cms"
     name: "Garter cms"
     files:
-        - file: "content/main/main.json"
-          label: "Main page"
-          name: "main_page"
-          fields:
-            - label: "Main page header"
-              name: "main_page_header"
-              widget: "object"
-              fields:
-                - label: "Main page header"
-                  name: "main_page_header"
-                  widget: "string"
-                - label: "Main page text"
-                  name: "main_page_text"
-                  widget: "string"
-                - label: "Main page available products"
-                  name: "main_page_products_list"
-                  widget: "list"
-                  min: 4
-                  max: 4
-                  fields:
-                    - label: "Product list"
-                      name: "main_page_product_list"
-                      widget: "string"
+      - file: "content/main/main.json"
+        # label: "Main page"
+        # name: "main_page"
+        fields:
+          - label: "Main page"
+            name: "main_page"
+            widget: "object"
+            fields:
+              - label: "Main page header"
+                name: "main_page_header"
+                widget: "string"
+              - label: "Main page text"
+                name: "main_page_text"
+                widget: "string"
+              - label: "Main page available products"
+                name: "main_page_products_list"
+                widget: "list"
+                min: 4
+                max: 4
+                fields:
+                  - label: "Product list"
+                    name: "main_page_product_list"
+                    widget: "string"
 
-
-
-              
-      # - file: "content/about/about.json"
+      - file: "content/about/about.json"
+        # label: "About page"
+        # name: "about_page"
+        fields:
+          - label: "About page"
+            name: "about_page"
+            widget: "object"
+            fields:
+              - label: "About page header"
+                name: "about_page_header"
+                widget: "string"
+              - label: "About page description"
+                name: "about_page_description"
+                widget: "string"
 
       # - file: "content/contact/contact.json"
       # - file: "content/faq/faq.json"
       # - file: "content/wishlist/wishlist.json"
-      
-
-
