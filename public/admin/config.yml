@@ -15,8 +15,8 @@ collections:
     name: "Garter cms"
     files:
       - file: "content/main/main.json"
-        # label: "Main page"
-        # name: "main_page"
+        label: "Main page"
+        name: "main_page"
         fields:
           - label: "Main page"
             name: "main_page"
@@ -39,8 +39,8 @@ collections:
                     widget: "string"
 
       - file: "content/about/about.json"
-        # label: "About page"
-        # name: "about_page"
+        label: "About page"
+        name: "about_page"
         fields:
           - label: "About page"
             name: "about_page"
