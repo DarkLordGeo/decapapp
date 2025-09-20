@@ -1,6 +1,6 @@
 import BackgroundSection from "./BackgroundSection"
 import ProductCards from "./ProductCards"
-BackgroundSection
+
 function MainPage() {
     return (
         <>

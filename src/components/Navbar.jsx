@@ -42,79 +42,84 @@ function Navbar() {
 
                     </div>
                     <div className="flex xl:hidden w-full items-center justify-evenly gap-32 sm:justify-evenly sm:gap-32 md:gap-96 !py-6">
-                        <h1 className="text-3xl">Garter</h1>
+                        <h1 className="text-2xl xl:text-3xl">Garter</h1>
                         <Menu
                             onClick={() => setIsOpen(!isOpen)}
                             color="#ffffff"
-                            width="32px"
-                            height="32px"
+                            width="24px"
+                            height="24px"
                             className="cursor-pointer"
                         />
                     </div>
-                    {
-                        isOpen &&
-                        <div
-                            className={`
-                        absolute xl:hidden
-                        flex flex-col gap-2 top-21  
-                        w-full bg-gray-300/40 text-white 
-                        text-center items-center justify-center
-                        rounded-2xl rounded-tr-none rounded-tl-none
-                        transition-all duration-300 ease-in-out 
-                        ${isOpen ? "max-h-auto opacity-100" : "max-h-0 opacity-0"}
+                    {/* {
+                        isOpen && */}
+                    {/* <div class="absolute inset-0 bg-black/30 backdrop-blur-lg"></div> */}
+                    <div
+                        className={`
+                            absolute top-24 w-full 
+                            bg-gray-300 text-black rounded-2xl
+                            flex flex-col items-center justify-center gap-2
+                            
+                            text-center
+                            origin-top overflow-hidden
+                            transition-all duration-300 ease-in-out
+                            ${isOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"}
                         `}>
-                            <Link to={'/'}
-                                className='border-b-2 w-full !py-6'
+                        <Link to={'/'}
+                            className='border-b-2 w-full !py-6'
                             onClick={() => setIsOpen(!isOpen)}
-                            >
-                                <li>
-                                    მთავარი
-                                </li>
-                            </Link>
-                            <Link to={"/catalog"}
-                                className='border-b-2 w-full !py-6'
+                        >
+                            <li>
+                                მთავარი
+                            </li>
+                        </Link>
+                        <Link to={"/catalog"}
+                            className='border-b-2 w-full !py-6'
+                            onClick={() => setIsOpen(!isOpen)}
+                        >
+                            <li>
+                                კატალოგი
+                            </li>
+                        </Link>
+                        <Link to={"/about"}
+                            className='border-b-2 w-full !py-6'
+                            onClick={() => setIsOpen(!isOpen)}
+                        >
+                            <li>
+                                ჩვენ შესახებ
+                            </li>
+                        </Link>
+                        <Link to={"/contact"}
+                            className='border-b-2 w-full !py-6'
+                            onClick={() => setIsOpen(!isOpen)}
 
-                            >
-                                <li>
-                                    კატალოგი
-                                </li>
-                            </Link>
-                            <Link to={"/about"}
-                                className='border-b-2 w-full !py-6'
+                        >
+                            <li>
+                                კონტაქტი
+                            </li>
+                        </Link>
+                        <Link to={"/faq"}
+                            className='border-b-2 w-full !py-6'
+                            onClick={() => setIsOpen(!isOpen)}
 
-                            >
-                                <li>
-                                    ჩვენ შესახებ
-                                </li>
-                            </Link>
-                            <Link to={"/contact"}
-                                className='border-b-2 w-full !py-6'
+                        >
+                            <li>
+                                FAQ
+                            </li>
+                        </Link>
+                        <Link to={"/wishlist"}
+                            className=' w-full !py-6'
+                            onClick={() => setIsOpen(!isOpen)}
 
-                            >
-                                <li>
-                                    კონტაქტი
-                                </li>
-                            </Link>
-                            <Link to={"/faq"}
-                                className='border-b-2 w-full !py-6'
-
-                            >
-                                <li>
-                                    FAQ
-                                </li>
-                            </Link>
-                            <Link to={"/wishlist"}
-                                className=' w-full !py-6'
-
-                            >
-                                <li>
-                                    სურვილების სია
-                                </li>
-                            </Link>
-                        </div>
-                    }
+                        >
+                            <li>
+                                სურვილების სია
+                            </li>
+                        </Link>
+                    </div>
+                    {/* } */}
                 </ul>
-            </nav>
+            </nav >
         </>
     )
 
