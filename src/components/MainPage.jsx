@@ -10,7 +10,7 @@ function MainPage() {
                         <h1 className="text-2xl md:text-3xl lg:text-4xl text-white">Garter</h1>
                     </div>
                     <h1 className="text-3xl lg:text-[3rem] xl:text-[4rem] text-white">Your confidence starts here</h1>
-                    <div className="w-full py-[125px] ">
+                    <div className="w-full ">
                         <ul className="flex w-full grow-1">
                             <li className="text-center text-white bg-black/70 font-thin w-full !py-2 md:!py-6 lg:!py-8 xl:!py-10 sm:text-xl lg:text-2xl xl:text-3xl hover:scale-95 transition-all cursor-pointer">Bed linen</li>
                             <li className="text-center text-white bg-black/70 font-thin w-full !py-2 md:!py-6 lg:!py-8 xl:!py-10 sm:text-xl lg:text-2xl xl:text-3xl hover:scale-95 transition-all cursor-pointer">Swimsuits</li>
