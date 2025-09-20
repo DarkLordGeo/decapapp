@@ -162,5 +162,6 @@ collections:
                 widget: "string"
               - label: "Message button"
                 name: "message_text"
+                default: "Message us!"
                 widget: "string"
 
