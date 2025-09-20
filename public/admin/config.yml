@@ -53,6 +53,33 @@ collections:
                 name: "about_page_description"
                 widget: "string"
 
-      # - file: "content/contact/contact.json"
+      - file: "content/contact/contact.json"
+        label: "Contact page"
+        name: "contact_page"
+        fields:
+          - label: "contact_page"
+            name: "contact_page"
+            widget: "object"
+            fields:
+              - label: "Contact page header"
+                name: "contact_page_header"
+                widget: "string"
+              - label: "Contact page description"
+                name: "contact_page_description"
+                widget: "string"
+              - label: "Name placeholder"
+                name: 'name_placeholder'
+                widget: 'string'
+              - label: "Email placeholder"
+                name: 'email_placeholder'
+                widget: 'string'
+              - label: "Message placeholder"
+                name: 'message_placeholder'
+                widget: 'string'
+              - label: 'Button text'
+                name: 'button_text'
+                widget: 'string'
+                  
+
       # - file: "content/faq/faq.json"
       # - file: "content/wishlist/wishlist.json"
