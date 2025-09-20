@@ -5,16 +5,36 @@ backend:
 media_folder: "public/  "
 public_folder: "/uploads"
 
-site_url: 'https://admirable-syrniki-686715.netlify.app/'
-display_url: 'https://admirable-syrniki-686715.netlify.app/'
+site_url: "https://admirable-syrniki-686715.netlify.app/"
+display_url: "https://admirable-syrniki-686715.netlify.app/"
 
 collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "src/posts"
-    create: true
-    format: "json"
-    slug: "{{slug}}"
-    fields:
-      - { name: "title", label: "Title", widget: "string" }
-      - { name: "body", label: "Body", widget: "markdown" }
+  - label: "Garter content management system"
+    name: "Garter"
+    files:
+      - file: "content/main/main.json"
+        label: "Main page"
+        name: "main_page"
+        fields:
+          - label: "Main page header"
+            name: "main_page_header"
+            widget: "object"
+            fields:
+              - {
+                  label: "Main page header",
+                  name: "main_page_header",
+                  widget: "string",
+                }
+              - {
+                  label: "Main page text",
+                  name: "main_page_text",
+                  widget: "string",
+                }
+              - {
+                label: "Main page available products",
+                name: 'main_page_products_list',
+                widget: 'list',
+                max: 4,
+                  # fields:
+                  #   - { label:  'main_page_list', name: ''}
+              }
