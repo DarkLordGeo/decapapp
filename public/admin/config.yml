@@ -9,32 +9,41 @@ site_url: "https://admirable-syrniki-686715.netlify.app/"
 display_url: "https://admirable-syrniki-686715.netlify.app/"
 
 collections:
-  - label: "Garter content management system"
-    name: "Garter"
+  - label: "Garter cms"
+    name: "Garter cms"
     files:
-      - file: "content/main/main.json"
-        label: "Main page"
-        name: "main_page"
-        fields:
-          - label: "Main page header"
-            name: "main_page_header"
-            widget: "object"
-            fields:
-              - {
-                  label: "Main page header",
-                  name: "main_page_header",
-                  widget: "string",
-                }
-              - {
-                  label: "Main page text",
-                  name: "main_page_text",
-                  widget: "string",
-                }
-              - {
-                label: "Main page available products",
-                name: 'main_page_products_list',
-                widget: 'list',
-                max: 4,
-                  # fields:
-                  #   - { label:  'main_page_list', name: ''}
-              }
+        - file: "content/main/main.json"
+          label: "Main page"
+          name: "main_page"
+          fields:
+            - label: "Main page header"
+              name: "main_page_header"
+              widget: "object"
+              fields:
+                - label: "Main page header"
+                  name: "main_page_header"
+                  widget: "string"
+                - label: "Main page text"
+                  name: "main_page_text"
+                  widget: "string"
+                - label: "Main page available products"
+                  name: "main_page_products_list"
+                  widget: "list"
+                  min: 4
+                  max: 4
+                  fields:
+                    - label: "Product list"
+                      name: "main_page_product_list"
+                      widget: "string"
+
+
+
+              
+      # - file: "content/about/about.json"
+
+      # - file: "content/contact/contact.json"
+      # - file: "content/faq/faq.json"
+      # - file: "content/wishlist/wishlist.json"
+      
+
+
