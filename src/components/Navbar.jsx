@@ -2,7 +2,6 @@ import { Link } from "react-router"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
 function Navbar() {
-
     const [isOpen, setIsOpen] = useState(false)
     return (
         <>
@@ -51,13 +50,10 @@ function Navbar() {
                             className="cursor-pointer"
                         />
                     </div>
-                    {/* {
-                        isOpen && */}
-                    {/* <div class="absolute inset-0 bg-black/30 backdrop-blur-lg"></div> */}
                     <div
                         className={`
                             absolute top-24 w-full 
-                            bg-gray-300 text-black rounded-2xl
+                            bg-white text-black rounded-2xl
                             flex flex-col items-center justify-center gap-2
                             
                             text-center
@@ -117,7 +113,6 @@ function Navbar() {
                             </li>
                         </Link>
                     </div>
-                    {/* } */}
                 </ul>
             </nav >
         </>
