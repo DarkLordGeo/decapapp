@@ -131,11 +131,11 @@ collections:
             widget: "string"
 
   - name: "Products"
-    label: "product_list"
+    label: "Product List"
     files:
       - file: "src/content/products/products.json"
         label: "Products"
-        name: "product_list"
+        name: "product_list_content"
         fields:
           - label: "Product list"
             name: "product_list"
@@ -145,14 +145,15 @@ collections:
               - label: "Product Name"
                 name: "product_name"
                 widget: "string"
-              - label: "Product size"
+              - label: "Product sizes"
                 name: "product_sizes"
-                fields:
-                  - label: "Product sizes"
-                    name: "product_sizes"
-                    widget: "list"
-                    min: 1
-                    max: 5
+                widget: "list"
+                min: 1
+                max: 5
+                field:
+                  label: "Size"
+                  name: "size"
+                  widget: "string"
               - label: "Product availability"
                 name: "product_available"
                 widget: "boolean"
@@ -161,4 +162,5 @@ collections:
                 widget: "string"
               - label: "Message button"
                 name: "message_text"
-                widget: "text"
+                widget: "string"
+
