@@ -34,6 +34,9 @@ collections:
               - label: "Product list"
                 name: "main_page_product_list"
                 widget: "string"
+          - label: "Main page background"
+            name: "main_page_background"
+            widget: "image"
 
   # About Page
   - name: "about_page"
