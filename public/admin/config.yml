@@ -2,8 +2,11 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "public/uploads"
+media_folder: "public/  "
 public_folder: "/uploads"
+
+site_url: 'https://admirable-syrniki-686715.netlify.app/'
+display_url: 'https://admirable-syrniki-686715.netlify.app/'
 
 collections:
   - name: "posts"
