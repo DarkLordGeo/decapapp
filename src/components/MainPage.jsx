@@ -6,7 +6,7 @@ function MainPage() {
         <>
             <BackgroundSection imageUrl={'https://eigensinnig-wien.com/cdn/shop/files/all-black-women-outfits-eigensinnig-wien.webp?v=1738449239'}>
                 <div className="relative z-10 flex items-center justify-between h-full w-full text-white flex-col text-center">
-                    <div className="w-full text-center py-32 collapse xl:visible">
+                    <div className="w-full text-center collapse xl:visible">
                         <h1 className="text-2xl md:text-3xl lg:text-4xl text-white">Garter</h1>
                     </div>
                     <h1 className="text-3xl lg:text-[3rem] xl:text-[4rem] text-white">Your confidence starts here</h1>
