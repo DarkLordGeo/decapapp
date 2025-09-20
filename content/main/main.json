@@ -16,5 +16,23 @@
     ],
     "main_page_header": "garter",
     "main_page_text": "dream "
+  },
+  "main_page": {
+    "main_page_header": "Garter",
+    "main_page_text": "Dream best ",
+    "main_page_products_list": [
+      {
+        "main_page_product_list": "Bedlines"
+      },
+      {
+        "main_page_product_list": "Bedlines"
+      },
+      {
+        "main_page_product_list": "Bedlines"
+      },
+      {
+        "main_page_product_list": "Bedlines"
+      }
+    ]
   }
 }
