@@ -14,7 +14,7 @@ collections:
   - label: "Garter cms"
     name: "Garter cms"
     files:
-      - file: "content/main/main.json"
+      - file: "src/content/main/main.json"
         label: "Main page"
         name: "main_page"
         fields:
@@ -38,7 +38,7 @@ collections:
                     name: "main_page_product_list"
                     widget: "string"
 
-      - file: "content/about/about.json"
+      - file: "src/content/about/about.json"
         label: "About page"
         name: "about_page"
         fields:
@@ -51,9 +51,9 @@ collections:
                 widget: "string"
               - label: "About page description"
                 name: "about_page_description"
-                widget: "text"
+                widget: "markdown"
 
-      - file: "content/contact/contact.json"
+      - file: "src/content/contact/contact.json"
         label: "Contact page"
         name: "contact_page"
         fields:
@@ -80,7 +80,7 @@ collections:
                 name: "button_text"
                 widget: "string"
 
-      - file: "content/faq/faq.json"
+      - file: "src/content/faq/faq.json"
         label: "FAQ page"
         name: "faq_page"
         fields:
@@ -99,13 +99,13 @@ collections:
                 name: "faq_answer"
                 widget: "markdown"
 
-
-      - file: "content/wishlist/wishlist.json"
+      - file: "src/content/wishlist/wishlist.json"
         label: "Wishlist page"
         name: "wishlist_page"
         fields:
           - label: "Wishlist page"
             name: "wishlist_page"
+            widget: "object"
             fields:
               - label: "Wishlist page header"
                 name: "wishlist_page_header"
