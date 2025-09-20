@@ -23,7 +23,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/wishlist" element={<Wishlist />} />
-            <Route path="/:productId" element={<ProductPage />} />
+            <Route path="/product" element={<ProductPage />} />
           </Routes>
         <Footer />
       </BrowserRouter>

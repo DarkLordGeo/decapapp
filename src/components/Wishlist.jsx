@@ -8,7 +8,6 @@ function Wishlist() {
                     <div className="!mx-auto w-full max-w-lg">
                         <h1 className="text-4xl font-medium">Wishlist</h1>
                         <p className="!mt-3 !mb-12">Tell us what you wish for wish@gmail.com</p>
-
                         <form action="https://api.web3forms.com/submit" className="!mt-10">
                             <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
                             <div className="flex flex-col gap-6 w-full">
