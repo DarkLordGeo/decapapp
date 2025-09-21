@@ -51,7 +51,7 @@ collections:
             widget: "string"
           - label: "About page description"
             name: "about_page_description"
-            widget: "markdown"
+            widget: "text"
 
   # Contact Page
   - name: "contact_page"
