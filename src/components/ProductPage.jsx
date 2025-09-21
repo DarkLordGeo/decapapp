@@ -8,29 +8,13 @@ function ProductPage() {
     const location = useLocation()
     const product_data = location?.state
 
-    console.log(location);
-
-    console.log(product_data.product_list[id]);
-    const as = {
-        "message_text": "Exercitation asperio",
-        "product_image": "https://americantall.com/cdn/shop/products/American-Tall-Men-Essential-SLIM-FIT-Crew-Neck-Tees-White-front.jpg?v=1673367625",
-        "product_name": "Nadine House",
-        "product_sizes": [
-            "Corporis eiusmod aut",
-            "Similique eius nisi ",
-            "Vel voluptate assume"
-        ],
-        "product_price": "292",
-        "product_available": true
-    }
-
     return (
         <>
             <BackgroundSection height="auto" imageUrl={'https://eigensinnig-wien.com/cdn/shop/files/all-black-women-outfits-eigensinnig-wien.webp?v=1738449239'}>
                 <div className="w-3/4 relative flex flex-col lg:flex-row bg-white gap-6 lg:gap-12 !px-6 !pt-10 !pb-8 !mt-42 !mb-32 rounded-xl  justify-evenly">
-
-                    <div className='h-96 w-full lg:w-1/2 items-center flex justify-center'>
-                        <img className='object-cover w-full h-full'
+                    <div className='h-full lg:min-h-[800px] w-full lg:w-[500px] items-center flex justify-center lg:!pb-12'>
+                        <img
+                            className='object-cover w-full h-full aspect-[2/3] '
                             src={product_data?.product_list[id]?.product_image}
                         />
                     </div>
@@ -49,12 +33,8 @@ function ProductPage() {
                                 {product_data?.product_list[id]?.product_sizes?.map((item, key) => (
                                     <li className='w-12 h-12 text-center flex items-center justify-center rounded-full bg-gray-400/50 text-xl' key={key}>{item}</li>
                                 ))}
-
-                                {/* <li className='w-12 h-12 text-center flex items-center justify-center rounded-full bg-gray-400/50 text-xl'>S</li> */}
-                                {/* <li className='w-12 h-12 text-center flex items-center justify-center rounded-full bg-gray-400/50 text-xl'>S</li> */}
                             </ul>
                         </div>
-
                         {/* avaialability */}
                         <div>
                             <h2 className={`
@@ -85,7 +65,7 @@ function ProductPage() {
 
                     </div>
 
-                    {/* <h1>{product_data?.product_list[id]?.product_name}</h1> */}
+
                 </div>
 
 
