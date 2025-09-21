@@ -6,7 +6,7 @@ import axios from "axios";
 
 function Contact() {
     
-
+    
     // const useFetchData = () => {
     //     return useQuery({
     //         queryKey: ['contact'],
