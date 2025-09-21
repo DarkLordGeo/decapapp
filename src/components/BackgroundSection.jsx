@@ -12,6 +12,7 @@ function BackgroundSection({ imageUrl, children, height = 'h-screen' }) {
             }
         })
     }
+    
     const { data, error, isLoading } = useFetchData()
     const cmsData = data?.data
 
