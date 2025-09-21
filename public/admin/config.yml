@@ -167,3 +167,6 @@ collections:
             name: "message_text"
             default: "Message us!"
             widget: "string"
+          - label: "Inbox link"
+            name: "inbox_link"
+            widget: "string"
