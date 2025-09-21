@@ -8,7 +8,7 @@ function Contact() {
         return useQuery({
             queryKey: ['contact'],
             queryFn: () => {
-                return axios.get('/src/content/contact/contact.json')
+                return axios.get('public/content/contact/contact.json')
             }
         })
     }

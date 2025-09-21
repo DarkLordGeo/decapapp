@@ -7,7 +7,7 @@ function AboutUs() {
         return useQuery({
             queryKey: ['about'],
             queryFn: () => {
-                return axios.get('/public/content/about/about.json')
+                return axios.get('public/content/about/about.json')
             }
         })
     }

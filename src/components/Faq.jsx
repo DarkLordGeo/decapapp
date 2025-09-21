@@ -7,7 +7,7 @@ function Faq() {
         return useQuery({
             queryKey: ['faq'],
             queryFn: () => {
-                return axios.get('/src/content/faq/faq.json')
+                return axios.get('public/content/faq/faq.json')
             }
         })
     }
@@ -25,12 +25,12 @@ function Faq() {
                         <div className="flex flex-col items-center">
                             <h2 className="!mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl">{cmsData.faq_header}</h2>
                         </div>
-                        {cmsData.faqs.map((item) => (
+                        {cmsData.faqs?.map((item) => (
                             <div className=" grid max-w-xl divide-y divide-neutral-200">
                                 <div class="!py-5">
                                     <details class="group">
                                         <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-                                            <span>{item.faq_question}</span>
+                                            <span>{item?.faq_question}</span>
                                             <span class="transition group-open:rotate-180">
                                                 <svg fill="none" height="24" shape-rendering="geometricPrecision"
                                                     stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -40,7 +40,7 @@ function Faq() {
                                             </span>
                                         </summary>
                                         <p class="group-open:animate-fadeIn mt-3 text-neutral-600">
-                                            {item.faq_answer}
+                                            {item?.faq_answer}
                                         </p>
                                     </details>
                                 </div>

@@ -12,7 +12,7 @@ function MainPage() {
         return useQuery({
             queryKey: ['main'],
             queryFn: () => {
-                return axios.get('/src/content/main/main.json')
+                return axios.get('public/content/main/main.json')
             }
         })
     }

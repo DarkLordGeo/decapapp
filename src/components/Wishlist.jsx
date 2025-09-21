@@ -8,7 +8,7 @@ function Wishlist() {
         return useQuery({
             queryKey: ['wishlist'],
             queryFn: () => {
-                return axios.get('/src/content/wishlist/wishlist.json')
+                return axios.get('public/content/wishlist/wishlist.json')
             }
         })
     }

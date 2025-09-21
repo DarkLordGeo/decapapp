@@ -8,11 +8,11 @@ function BackgroundSection({ imageUrl, children, height = 'h-screen' }) {
         return useQuery({
             queryKey: ['main'],
             queryFn: () => {
-                return axios.get('/src/content/main/main.json')
+                return axios.get('public/content/main/main.json')
             }
         })
     }
-    
+
     const { data, error, isLoading } = useFetchData()
     const cmsData = data?.data
 
