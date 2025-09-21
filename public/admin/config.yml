@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "public/  "
+media_folder: "public/"
 public_folder: "/uploads"
 
 site_url: "https://admirable-syrniki-686715.netlify.app/"
@@ -15,7 +15,7 @@ collections:
   - name: "main_page"
     label: "Main Page"
     files:
-      - file: "src/content/main/main.json"
+      - file: "public/content/main/main.json"
         label: "Main Page Content"
         name: "main_page_content"
         fields:
@@ -42,7 +42,7 @@ collections:
   - name: "about_page"
     label: "About Page"
     files:
-      - file: "src/content/about/about.json"
+      - file: "public/content/about/about.json"
         label: "About Page Content"
         name: "about_page_content"
         fields:
@@ -57,7 +57,7 @@ collections:
   - name: "contact_page"
     label: "Contact Page"
     files:
-      - file: "src/content/contact/contact.json"
+      - file: "public/content/contact/contact.json"
         label: "Contact Page Content"
         name: "contact_page_content"
         fields:
@@ -84,7 +84,7 @@ collections:
   - name: "faq_page"
     label: "FAQ Page"
     files:
-      - file: "src/content/faq/faq.json"
+      - file: "public/content/faq/faq.json"
         label: "FAQ Page Content"
         name: "faq_page_content"
         fields:
@@ -107,7 +107,7 @@ collections:
   - name: "wishlist_page"
     label: "Wishlist Page"
     files:
-      - file: "src/content/wishlist/wishlist.json"
+      - file: "public/content/wishlist/wishlist.json"
         label: "Wishlist Page Content"
         name: "wishlist_page_content"
         fields:
@@ -133,7 +133,7 @@ collections:
   - name: "Products"
     label: "Product List"
     files:
-      - file: "src/content/products/products.json"
+      - file: "public/content/products/products.json"
         label: "Products"
         name: "product_list_content"
         fields:
