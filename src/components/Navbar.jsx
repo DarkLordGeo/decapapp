@@ -42,14 +42,16 @@ function Navbar() {
 
                     </div>
                     <div className="flex xl:hidden w-full items-center justify-evenly gap-32 sm:justify-evenly sm:gap-32 md:gap-96 !py-6">
-                        <h1 className="text-2xl xl:text-3xl">Garter</h1>
-                        <Menu
-                            onClick={() => setIsOpen(!isOpen)}
-                            color="#ffffff"
-                            width="24px"
-                            height="24px"
-                            className="cursor-pointer"
-                        />
+                        <Link to={'/'}>
+                            <h1 className="text-2xl xl:text-3xl">Garter</h1>
+                            <Menu
+                                onClick={() => setIsOpen(!isOpen)}
+                                color="#ffffff"
+                                width="24px"
+                                height="24px"
+                                className="cursor-pointer"
+                            />
+                        </Link>
                     </div>
                     <div
                         className={`
