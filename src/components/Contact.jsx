@@ -2,8 +2,6 @@ import BackgroundSection from "./BackgroundSection"
 import contact from '/src/content/contact/contact.json'
 
 function Contact() {
-    console.log(contact);
-
     return (
         <>
             <BackgroundSection>

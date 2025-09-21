@@ -1,27 +1,12 @@
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
-
+import main from '/src/content/main/main.json'
 
 function BackgroundSection({ imageUrl, children, height = 'h-screen' }) {
-
-    const useFetchData = () => {
-        return useQuery({
-            queryKey: ['main'],
-            queryFn: () => {
-                return axios.get('public/content/main/main.json')
-            }
-        })
-    }
-
-    const { data, error, isLoading } = useFetchData()
-    const cmsData = data?.data
-
     return (
         <>
             <div className={`relative ${height} w-full flex items-center justify-center `}>
                 {/* Background image */}
                 <img
-                    src={imageUrl || cmsData?.main_page_background}
+                    src={imageUrl || main?.main_page_background}
                     className="absolute inset-0 w-full h-full object-cover"
                     alt="background"
                 />

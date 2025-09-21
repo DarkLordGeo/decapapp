@@ -1,21 +1,7 @@
 import BackgroundSection from "./BackgroundSection"
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import faq from '/src/content/faq/faq.json'
+
 function Faq() {
-
-    const useFetchData = () => {
-        return useQuery({
-            queryKey: ['faq'],
-            queryFn: () => {
-                return axios.get('public/content/faq/faq.json')
-            }
-        })
-    }
-    const { data, error, isLoading } = useFetchData()
-    if (error) return (<><div><h1>Error</h1></div></>)
-    if (isLoading) return (<><div><h1>Loading...</h1></div></>)
-    const cmsData = data?.data
-
     return (
         <>
             <BackgroundSection height='auto'>
@@ -23,9 +9,11 @@ function Faq() {
                     className="relative w-4/5 lg:w-2/5 bg-white !px-6 !pt-10 !pb-8 !mt-72 !mb-32 sm:mx-auto rounded-lg">
                     <div className="!mx-2 !px-5">
                         <div className="flex flex-col items-center">
-                            <h2 className="!mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl">{cmsData.faq_header}</h2>
+                            <h2 className="!mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl">
+                                {faq.faq_header}
+                            </h2>
                         </div>
-                        {cmsData.faqs?.map((item) => (
+                        {faq.faqs?.map((item) => (
                             <div className=" grid max-w-xl divide-y divide-neutral-200">
                                 <div class="!py-5">
                                     <details class="group">
@@ -46,7 +34,6 @@ function Faq() {
                                 </div>
                             </div>
                         ))}
-
                     </div>
                 </div>
             </BackgroundSection>

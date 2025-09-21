@@ -1,49 +1,33 @@
 import BackgroundSection from "./BackgroundSection"
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import wishlist from '/src/content/wishlist/wishlist.json'
 
 function Wishlist() {
-
-    const useFetchData = () => {
-        return useQuery({
-            queryKey: ['wishlist'],
-            queryFn: () => {
-                return axios.get('public/content/wishlist/wishlist.json')
-            }
-        })
-    }
-    const { data, error, isLoading } = useFetchData()
-    if (error) return (<><div><h1>Error</h1></div></>)
-    if (isLoading) return (<><div><h1>Loading...</h1></div></>)
-    const cmsData = data?.data
-    console.log(data);
-
     return (
         <>
             <BackgroundSection>
                 <div className="relative w-4/5 lg:w-2/5 bg-white !px-6 !pt-10 !pb-8 !mt-72 !mb-32 sm:mx-auto rounded-lg">
                     <div className="!mx-auto w-full max-w-lg">
-                        <h1 className="text-4xl font-medium">{cmsData.wishlist_page_header}</h1>
-                        <p className="!mt-3 !mb-12">{cmsData.wishlist_page_description}</p>
+                        <h1 className="text-4xl font-medium">{wishlist.wishlist_page_header}</h1>
+                        <p className="!mt-3 !mb-12">{wishlist.wishlist_page_description}</p>
                         <form action="https://api.web3forms.com/submit" className="!mt-10">
                             <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
                             <div className="flex flex-col gap-6 w-full">
                                 <div className='flex flex-col md:flex-row w-full gap-6'>
                                     <div className="relative z-0 w-full">
                                         <input type="text" name="name" className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent !py-2.5 !px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
-                                        <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">{cmsData.name_placeholder}</label>
+                                        <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">{wishlist.name_placeholder}</label>
                                     </div>
                                     <div className="relative z-0 w-full">
                                         <input type="text" name="email" className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent !py-2.5 !px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
-                                        <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">{cmsData.email_placeholder}</label>
+                                        <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">{wishlist.email_placeholder}</label>
                                     </div>
                                 </div>
                                 <div className="relative z-0 col-span-2">
                                     <textarea name="message" rows="5" className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent !py-2.5 !px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" "></textarea>
-                                    <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">{cmsData.message_placeholder}</label>
+                                    <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">{wishlist.message_placeholder}</label>
                                 </div>
                             </div>
-                            <button type="submit" className="!mt-5 rounded-md bg-black !px-10 !py-2 text-white">{cmsData.button_text}</button>
+                            <button type="submit" className="!mt-5 rounded-md bg-black !px-10 !py-2 text-white">{wishlist.button_text}</button>
                         </form>
                     </div>
                 </div>
