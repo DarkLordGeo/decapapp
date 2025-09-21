@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react"
 import { useState } from "react"
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
+
     return (
         <>
             <nav className="flex flex-row items-center justify-center gap-4 z-11 text-xl w-4/5 rounded-xl absolute top-[100px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">

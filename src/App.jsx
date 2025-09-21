@@ -11,22 +11,25 @@ import { BrowserRouter, Routes, Route } from "react-router"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 
+
+
 function App() {
   return (
     <>
       <BrowserRouter>
         <Navbar />
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/catalog" element={<Catalog />} />
-            <Route path="/about" element={<AboutUs />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/faq" element={<Faq />} />
-            <Route path="/wishlist" element={<Wishlist />} />
-            <Route path="/product" element={<ProductPage />} />
-          </Routes>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/product" element={<ProductPage />} />
+        </Routes>
         <Footer />
       </BrowserRouter>
+
 
     </>
   )

@@ -1,39 +1,23 @@
-import { useEffect, useState } from "react"
+import { UserSquare } from "lucide-react"
 import BackgroundSection from "./BackgroundSection"
 import ProductCards from "./ProductCards"
+import {
+    useQuery
+} from "@tanstack/react-query"
+
 
 function MainPage() {
 
-    const [data, setData] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    useEffect(() => {
-        const fetchDataForPosts = async () => {
-            try {
-                const response = await fetch(
-                    `/src/content/main/main.json`
-                );
-                if (!response.ok) {
-                    throw new Error(`HTTP error: Status ${response.status}`);
-                }
-                let postsData = await response.json();
-                setData(postsData);
-                setError(null);
-            } catch (err) {
-                setError(err.message);
-                setData(null);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchDataForPosts();
-    }, []);
+    const {data, isLoading, isError} = useQuery({
+        queryFn:() => fetch('/src/content/main/main.json'),
+        queryKey: ['data']
+    })
 
     console.log(data);
-
+    
+    // /src/content/main/main.json
     return (
+
         <>
             <BackgroundSection imageUrl={'https://eigensinnig-wien.com/cdn/shop/files/all-black-women-outfits-eigensinnig-wien.webp?v=1738449239'}>
                 <div className="relative z-10 flex items-center justify-between h-full w-full text-white flex-col text-center">
