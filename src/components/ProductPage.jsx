@@ -8,9 +8,11 @@ function ProductPage() {
     const { id } = useParams()
     const location = useLocation()
     const product_data = location?.state
+
+
     useEffect(() => {
         window.scroll(0,0)
-    })
+    },[])
 
 
     return (
