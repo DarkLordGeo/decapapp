@@ -2,25 +2,29 @@ import BackgroundSection from "./BackgroundSection"
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
+import contact from '/content/contact/contact.json'
 
 function Contact() {
-    const useFetchData = () => {
-        return useQuery({
-            queryKey: ['contact'],
-            queryFn: () => {
-                return axios.get('public/content/contact/contact.json')
-            }
-        })
-    }
-    const { data, error, isLoading } = useFetchData()
-    if (error) return (<><div><h1>Error</h1></div></>)
-    if (isLoading) return (<><div><h1>Loading...</h1></div></>)
-    const cmsData = data?.data
+    
+    const c = 's'
+    console.log(c);
+    // const useFetchData = () => {
+    //     return useQuery({
+    //         queryKey: ['contact'],
+    //         queryFn: () => {
+    //             return axios.get('public/content/contact/contact.json')
+    //         }
+    //     })
+    // }
+    // const { data, error, isLoading } = useFetchData()
+    // if (error) return (<><div><h1>Error</h1></div></>)
+    // if (isLoading) return (<><div><h1>Loading...</h1></div></>)
+    // const cmsData = data?.data
 
     return (
         <>
             <BackgroundSection>
-                <div className="relative w-4/5 lg:w-2/5 bg-white !px-6 !pt-10 !pb-8 !mt-72 !mb-32 sm:mx-auto rounded-lg">
+                {/* <div className="relative w-4/5 lg:w-2/5 bg-white !px-6 !pt-10 !pb-8 !mt-72 !mb-32 sm:mx-auto rounded-lg">
                     <div className="!mx-auto w-full max-w-lg">
                         <h1 className="text-4xl font-medium">{cmsData.contact_page_header}</h1>
                         <p className="!mt-3 !mb-12">{cmsData.contact_page_description}</p>
@@ -46,7 +50,7 @@ function Contact() {
                             <button type="submit" className="!mt-5 rounded-md bg-black !px-10 !py-2 text-white">{cmsData.button_text}</button>
                         </form>
                     </div>
-                </div>
+                </div> */}
             </BackgroundSection>
         </>
     )
