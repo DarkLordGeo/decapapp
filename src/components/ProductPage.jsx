@@ -1,14 +1,17 @@
 import { useLocation, useParams } from "react-router"
 import BackgroundSection from "./BackgroundSection"
 import products from '/src/content/products/products.json'
+import { useEffect } from "react"
 
 function ProductPage() {
 
     const { id } = useParams()
     const location = useLocation()
     const product_data = location?.state
+    useEffect(() => {
+        window.scroll(0,0)
+    })
 
-    console.log(product_data);
 
     return (
         <>
@@ -20,7 +23,6 @@ function ProductPage() {
                             src={product_data?.product_list[id]?.product_image}
                         />
                     </div>
-
                     <div className='flex items-start flex-col justify-center w-full gap-6 lg:w-1/2'>
                         {/* name */}
                         <div>
@@ -60,14 +62,15 @@ function ProductPage() {
                         {/* message button */}
                         <div>
                             <button className='bg-blue-500 text-2xl font-bold text-white rounded-xl !py-2 !px-2 outline-none'>
-                                {product_data?.product_list[id]?.message_text}
+                                <a href={product_data?.inbox_link} target="_blank">
+                                    {product_data?.message_text}
+                                </a>
+
                             </button>
                         </div>
 
 
                     </div>
-
-
                 </div>
 
 
