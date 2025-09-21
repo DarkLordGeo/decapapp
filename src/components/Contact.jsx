@@ -2,12 +2,11 @@ import BackgroundSection from "./BackgroundSection"
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
-import contact from '/content/contact/contact.json'
+// import contact from '/content/contact/contact.json'
 
 function Contact() {
     
-    const c = 's'
-    console.log(c);
+
     // const useFetchData = () => {
     //     return useQuery({
     //         queryKey: ['contact'],
