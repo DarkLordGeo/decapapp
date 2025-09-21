@@ -23,7 +23,7 @@ function MainPage() {
     const cmsData = data?.data
     return (
         <>
-            <BackgroundSection>
+            {/* <BackgroundSection>
                 <div className="relative z-10 flex items-center justify-between h-full w-full text-white flex-col text-center">
                     <div className="w-full text-center collapse xl:visible">
                         <h1 className="text-2xl md:text-3xl lg:text-4xl text-white">{cmsData.main_page_header}</h1>
@@ -40,7 +40,7 @@ function MainPage() {
                     </div>
                 </div>
             </BackgroundSection>
-            <ProductCards />
+            <ProductCards /> */}
         </>
     )
 }
