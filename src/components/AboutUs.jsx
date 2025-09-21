@@ -1,13 +1,26 @@
 import BackgroundSection from "./BackgroundSection"
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 function AboutUs() {
+
+    const useFetchData = () => {
+        return useQuery({
+            queryKey: ['about'],
+            queryFn: () => {
+                return axios.get('/src/content/about/about.json')
+            }
+        })
+    }
+    const { data, error, isLoading } = useFetchData()
+    if (error) return (<><div><h1>Error</h1></div></>)
+    if (isLoading) return (<><div><h1>Loading...</h1></div></>)
+    const cmsData = data?.data
     return (
         <>
-            <BackgroundSection height="auto" imageUrl={'https://eigensinnig-wien.com/cdn/shop/files/all-black-women-outfits-eigensinnig-wien.webp?v=1738449239'}>
-                <div className='relative w-4/5 lg:w-2/5 bg-white !px-6 !pt-10 !pb-8 !mt-72 !mb-32 sm:mx-auto rounded-lg'>
-                    <h1 className='font-bold text-2xl lg:text-5xl !mb-5 lg:!mb-12 text-center'>About us</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aliquid blanditiis tempora natus reprehenderit officia labore ratione ut cupiditate fuga. Hic soluta laborum earum facere in, deserunt ducimus. Magnam, aliquam.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aliquid blanditiis tempora natus reprehenderit officia labore ratione ut cupiditate fuga. Hic soluta laborum earum facere in, deserunt ducimus. Magnam, aliquam.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aliquid blanditiis tempora natus reprehenderit officia labore ratione ut cupiditate fuga. Hic soluta laborum earum facere in, deserunt ducimus. Magnam, aliquam.</p>
+            <BackgroundSection height="auto" >
+                <div className='relative w-4/5  min-h-[500px] lg:w-2/5 bg-white !px-6 !pt-10 !pb-8 !mt-72 !mb-32 sm:mx-auto rounded-lg'>
+                    <h1 className='font-bold text-2xl lg:text-5xl !mb-5 lg:!mb-12 text-center'>{cmsData.about_page_header}</h1>
+                    <p className='text-base  w-auto'>{cmsData.about_page_description}</p>
                 </div>
             </BackgroundSection>
         </>
