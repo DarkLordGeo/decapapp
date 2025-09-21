@@ -8,6 +8,8 @@ function ProductPage() {
     const location = useLocation()
     const product_data = location?.state
 
+    console.log(product_data);
+
     return (
         <>
             <BackgroundSection height="auto" imageUrl={'https://eigensinnig-wien.com/cdn/shop/files/all-black-women-outfits-eigensinnig-wien.webp?v=1738449239'}>
