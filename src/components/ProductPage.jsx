@@ -40,7 +40,7 @@ function ProductPage() {
                                 >
                                     <img
                                         src={item.product_images}
-                                        alt={`Product image ${index}`}
+                                        alt={`Garter Product Image ${index}`}
                                         className="object-contain h-full w-full"
                                         onMouseOver={(e) => setHovered(e.currentTarget.src)}
                                     />

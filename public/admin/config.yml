@@ -37,7 +37,6 @@ collections:
           - label: "Main page background"
             name: "main_page_background"
             widget: "image"
-
   # About Page
   - name: "about_page"
     label: "About Page"
@@ -178,4 +177,7 @@ collections:
             widget: "string"
           - label: "Inbox link"
             name: "inbox_link"
+            widget: "string"
+          - label: "Product page header"
+            name: "product_page_header"
             widget: "string"

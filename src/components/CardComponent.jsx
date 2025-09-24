@@ -1,47 +1,55 @@
 import { useNavigate } from 'react-router'
 import products from '/src/content/products/products.json'
+
+
 function CardComponent() {
     const navigate = useNavigate()
     return (
         <>
-            {products.product_list?.map((item, key) => (
-                <div className="flex w-5/6 h-full flex-col items-center justify-center bg-white"
-                    key={key}
-                    onClick={() => navigate(`${location.pathname === '/catalog' ? `/catalog/product/${key}` : `product/${key}`}`, { state: products })}
-                >
-                    <a className='overflow-hidden cursor-pointer w-full flex items-center justify-center'>
-                        <img
-                            className="h-full aspect-[3/4] object-cover  hover:scale-105 transition-all duration-200"
-                            src={item.product_images[0].product_images}
-                            alt={item.message_text} />
-                    </a>
+            <div className='text-center !py-12'>
+                <h1 className='text-3xl font-bold'>Latest goods</h1>
+            </div>
 
-                    {/* </div> */}
-                    <div className="mt-4 pb-5">
-                        <a>
-                            <h5 className="text-center tracking-tight text-gray-500">{item.product_name}</h5>
+            <div className='w-4/5 h-full grid place-items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-5 sm:gap-12 lg:gap-4 !mt-5'>
+                {products.product_list?.map((item, key) => (
+                    <div className="flex w-5/6 h-full flex-col items-center justify-center bg-white"
+                        key={key}
+                        onClick={() => navigate(`${location.pathname === '/catalog' ? `/catalog/product/${key}` : `product/${key}`}`, { state: products })}
+                    >
+                        <a className='overflow-hidden cursor-pointer w-full flex items-center justify-center'>
+                            <img
+                                className="h-full aspect-[3/4] object-cover  hover:scale-105 transition-all duration-200"
+                                src={item.product_images[0].product_images}
+                                alt={`Garter Product Image `} />
                         </a>
-                        <div>
-                            <p className={`
+
+                        {/* </div> */}
+                        <div className="mt-4 pb-5">
+                            <a>
+                                <h5 className="text-center tracking-tight text-gray-500">{item.product_name}</h5>
+                            </a>
+                            <div>
+                                <p className={`
                             text-sm font-bold
                             text-center
                             ${item.product_available
-                                    ? `text-gray-900 line-through `
-                                    : `text-green-800`
-                                }
+                                        ? `text-gray-900 line-through `
+                                        : `text-green-800`
+                                    }
                              
                             `}>
-                                {item.product_available ? 'in stock' : 'in stock'}
-                            </p>
-                        </div>
-                        <div className=" flex justify-center">
-                            <p>
-                                <span className="text-sm font-bold text-gray-900">{item.product_price}</span>
-                            </p>
+                                    {item.product_available ? 'in stock' : 'in stock'}
+                                </p>
+                            </div>
+                            <div className=" flex justify-center">
+                                <p>
+                                    <span className="text-sm font-bold text-gray-900">{item.product_price}</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </>
     )
 }

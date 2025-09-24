@@ -1,7 +1,5 @@
 import main from '/src/content/main/main.json'
 
-console.log(main);
-
 function BackgroundSection({ imageUrl, children, height = 'h-screen' }) {
     return (
         <>
