@@ -145,10 +145,13 @@ collections:
               - label: "Product Name"
                 name: "product_name"
                 widget: "string"
+              - label: "Product present image"
+                name: "product_present_image"
+                widget: "image"
               - label: "Product images"
                 name: "product_images"
                 widget: "list"
-                max: 4
+                max: 3
                 min: 2
                 fields:
                   - label: "Product image"
