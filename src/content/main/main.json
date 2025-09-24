@@ -1,11 +1,8 @@
 {
   "main_page_header": "Officia dolor est m",
   "main_page_text": "Do elit est ipsam a",
-  "main_page_background": "https://i.pinimg.com/236x/e9/9c/57/e99c57535ebc34852ae6ae3cb35a55b7.jpg",
+  "main_page_background": "https://images.unsplash.com/photo-1483985988355-763728e1935b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D",
   "main_page_products_list": [
-    {
-      "main_page_product_list": "Aut laborum Non eiu"
-    },
     {
       "main_page_product_list": "Id nemo molestias od"
     },
@@ -13,7 +10,10 @@
       "main_page_product_list": "Eum beatae laborum "
     },
     {
-      "main_page_product_list": "Mollitia dolore unde"
+      "main_page_product_list": "test"
+    },
+    {
+      "main_page_product_list": "test"
     }
   ]
 }
