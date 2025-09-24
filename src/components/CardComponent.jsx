@@ -1,5 +1,5 @@
 import { useLocation, useNavigate, useParams } from 'react-router'
-// import products from '/src/content/products/products.json'
+import products from '/src/content/products/products.json'
 function CardComponent() {
 
     // console.log(products);

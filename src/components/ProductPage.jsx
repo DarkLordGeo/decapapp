@@ -1,6 +1,6 @@
 import { useLocation, useParams } from "react-router"
 import BackgroundSection from "./BackgroundSection"
-// import products from '/src/content/products/products.json'
+import products from '/src/content/products/products.json'
 import { useEffect } from "react"
 
 function ProductPage() {
