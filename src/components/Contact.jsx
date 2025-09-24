@@ -1,7 +1,36 @@
+import { useState } from "react";
 import BackgroundSection from "./BackgroundSection"
 import contact from '/src/content/contact/contact.json'
-
+import React from "react";
 function Contact() {
+
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "414fc166-0dcb-45e4-9c03-80dad43e0b23");
+
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+    };
+
+
     return (
         <>
             <BackgroundSection>
@@ -10,8 +39,7 @@ function Contact() {
                         <h1 className="text-4xl font-medium">{contact.contact_page_header}</h1>
                         <p className="!mt-3 !mb-12">{contact.contact_page_description}</p>
 
-                        <form action="https://api.web3forms.com/submit" className="!mt-10">
-                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                        <form className="!mt-10" onSubmit={onSubmit}>
                             <div className="flex flex-col gap-6 w-full">
                                 <div className='flex flex-col md:flex-row w-full gap-6'>
                                     <div className="relative z-0 w-full">
@@ -30,6 +58,8 @@ function Contact() {
                             </div>
                             <button type="submit" className="!mt-5 rounded-md bg-black !px-10 !py-2 text-white">{contact.button_text}</button>
                         </form>
+
+                        <span>{result}</span>
                     </div>
                 </div>
             </BackgroundSection>

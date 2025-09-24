@@ -1,7 +1,8 @@
 import CardComponent from "./CardComponent"
 import products from '/src/content/products/products.json'
-console.log(products);
 function ProductCards() {
+
+
     return (
         <>
             <div className='text-center !py-12'>
