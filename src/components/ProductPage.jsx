@@ -1,14 +1,15 @@
-import { useLocation, useParams } from "react-router"
+import { useLocation, useNavigate, useParams } from "react-router"
 import BackgroundSection from "./BackgroundSection"
+
 import products from '/src/content/products/products.json'
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 function ProductPage() {
 
     const { id } = useParams()
     const location = useLocation()
     const product_data = location?.state
-
+    const [hovered, setHovered] = useState('')
 
     useEffect(() => {
         window.scroll(0, 0)
@@ -18,13 +19,38 @@ function ProductPage() {
     return (
         <>
             <BackgroundSection height="auto" imageUrl={'https://eigensinnig-wien.com/cdn/shop/files/all-black-women-outfits-eigensinnig-wien.webp?v=1738449239'}>
-                <div className="w-3/4 relative flex flex-col lg:flex-row bg-white gap-6 lg:gap-12 !px-6 !pt-10 !pb-8 !mt-42 !mb-32 rounded-xl  justify-evenly">
-                    <div className='h-full lg:min-h-[800px] w-full lg:w-[500px] items-center flex justify-center lg:!pb-12'>
-                        <img
-                            className='object-cover w-full h-full aspect-[2/3] '
-                            src={product_data?.product_list[id]?.product_image}
-                        />
+                <div className="w-3/4 relative flex flex-col lg:flex-row bg-white gap-6 lg:gap-12 !px-6 !pt-10 !pb-8 !mt-42 !mb-32 rounded-xl justify-evenly">
+                    {/* image */}
+                    <div className='flex flex-col justify-center items-center gap-12'>
+                        <div className='h-full lg:min-h-[800px] w-full lg:w-[500px] items-center flex justify-center'>
+                            <img
+                                className='object-cover w-full h-full aspect-[2/3] '
+                                src={hovered || product_data?.product_list[id].product_present_image}
+                            />
+                        </div>
+                        <div className="flex flex-row gap-12 w-full h-32 items-center justify-center">
+                            <div className="h-32 w-32 flex items-center justify-center overflow-hidden">
+                                <img
+                                    src={product_data?.product_list[id].product_present_image}
+                                    onMouseOver={(e) => setHovered(e.currentTarget.src)}
+                                />
+                            </div>
+                            {product_data?.product_list[id].product_images.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="h-32 w-32 flex items-center justify-center overflow-hidden"
+                                >
+                                    <img
+                                        src={item.product_images}
+                                        alt={`Product image ${index}`}
+                                        className="object-contain h-full w-full"
+                                        onMouseOver={(e) => setHovered(e.currentTarget.src)}
+                                    />
+                                </div>
+                            ))}
+                        </div>
                     </div>
+
                     <div className='flex items-start flex-col justify-center w-full gap-6 lg:w-1/2'>
                         {/* name */}
                         <div>
@@ -65,10 +91,10 @@ function ProductPage() {
                                 <a href={product_data?.inbox_link} target="_blank">
                                     {product_data?.message_text}
                                 </a>
-
                             </button>
                         </div>
                     </div>
+                    
                 </div>
 
 

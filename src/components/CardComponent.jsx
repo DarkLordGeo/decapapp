@@ -5,7 +5,7 @@ function CardComponent() {
     // console.log(products);
 
     const navigate = useNavigate()
-
+    console.log(products);
 
     return (
         <>
@@ -15,25 +15,11 @@ function CardComponent() {
                     onClick={() => navigate(`${location.pathname === '/catalog' ? `/catalog/product/${key}` : `product/${key}`}`, { state: products })}
                 >
                     <a className='overflow-hidden cursor-pointer w-full flex items-center justify-center'>
-                        {/* {item.product_images.map((content) => (
-                            <img src={content.product_image[0]}/>
-                        ))} */}
-                        {console.log(item.product_images[0].product_images)}
                         <img
-                            className="h-full aspect-[2/3] object-cover  hover:scale-105 transition-all duration-200"
+                            className="h-full aspect-[3/4] object-cover  hover:scale-105 transition-all duration-200"
                             src={item.product_images[0].product_images}
                             alt={item.message_text} />
                     </a>
-
-                    {console.log(item.product_images[0].product_images)}
-
-                    {/* {item.product_images.map((content) => (
-                        <div className='w-32 h-32'>
-                            <img src={content.product_image} className='w-full h-full' />
-                        </div>
-                    ))} */}
-
-
 
                     {/* </div> */}
                     <div className="mt-4 pb-5">
