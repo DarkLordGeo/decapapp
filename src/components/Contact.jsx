@@ -1,4 +1,3 @@
-import { useState } from "react";
 import BackgroundSection from "./BackgroundSection"
 import contact from '/src/content/contact/contact.json'
 import React from "react";
@@ -11,7 +10,7 @@ function Contact() {
         setResult("Sending....");
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "");
+        formData.append("access_key", "c03785ad-92dc-4f7b-adf7-370b23b52099");
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -22,7 +21,7 @@ function Contact() {
             setResult("Form Submitted Successfully");
             event.target.reset();
         } else {
-            console.log("Error", data);
+            console.log("Error");
             setResult(data.message);
         }
     };
@@ -36,6 +35,7 @@ function Contact() {
                         <p className="!mt-3 !mb-12">{contact.contact_page_description}</p>
 
                         <form className="!mt-10" onSubmit={onSubmit}>
+                            <input type="hidden" name="form_id" value="contact_form" />
                             <div className="flex flex-col gap-6 w-full">
                                 <div className='flex flex-col md:flex-row w-full gap-6'>
                                     <div className="relative z-0 w-full">

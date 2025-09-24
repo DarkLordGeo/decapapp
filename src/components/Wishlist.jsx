@@ -1,7 +1,31 @@
 import BackgroundSection from "./BackgroundSection"
 import wishlist from '/src/content/wishlist/wishlist.json'
+import React from "react";
 
 function Wishlist() {
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "c03785ad-92dc-4f7b-adf7-370b23b52099");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+        const data = await response.json();
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error");
+            setResult(data.message);
+        }
+    };
+
     return (
         <>
             <BackgroundSection>
@@ -9,8 +33,8 @@ function Wishlist() {
                     <div className="!mx-auto w-full max-w-lg">
                         <h1 className="text-4xl font-medium">{wishlist.wishlist_page_header}</h1>
                         <p className="!mt-3 !mb-12">{wishlist.wishlist_page_description}</p>
-                        <form action="https://api.web3forms.com/submit" className="!mt-10">
-                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                        <form onSubmit={onSubmit} className="!mt-10">
+                            <input type="hidden" name="form_id" value="wishlist_form" />
                             <div className="flex flex-col gap-6 w-full">
                                 <div className='flex flex-col md:flex-row w-full gap-6'>
                                     <div className="relative z-0 w-full">
@@ -29,6 +53,7 @@ function Wishlist() {
                             </div>
                             <button type="submit" className="!mt-5 rounded-md bg-black !px-10 !py-2 text-white">{wishlist.button_text}</button>
                         </form>
+                        <span>{result}</span>
                     </div>
                 </div>
             </BackgroundSection>
