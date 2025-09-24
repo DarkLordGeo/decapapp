@@ -1,9 +1,10 @@
 import { useLocation, useNavigate, useParams } from 'react-router'
 import products from '/src/content/products/products.json'
 function CardComponent() {
-    const navigate = useNavigate()
-    const location = useLocation()
-    console.log(location.pathname);
+    console.log(products);
+    // const navigate = useNavigate()
+    // const location = useLocation()
+    // console.log(location.pathname);
     
 
     

@@ -149,6 +149,7 @@ collections:
                 name: "product_images"
                 widget: "list"
                 max: 4
+                min: 2
                 fields:
                   - label: "Product image"
                     name: "product_images"
