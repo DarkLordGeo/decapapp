@@ -1,49 +1,41 @@
 {
   "product_list": [
     {
-      "message_text": "Exercitation asperio",
-      "product_image": "https://americantall.com/cdn/shop/products/American-Tall-Men-Essential-SLIM-FIT-Crew-Neck-Tees-White-front.jpg?v=1673367625",
-      "product_name": "Nadine House",
-      "product_sizes": [
-        "Corporis eiusmod aut",
-        "Similique eius nisi ",
-        "Vel voluptate assume"
+      "product_name": "Some stuff",
+      "product_images": [
+        {
+          "product_images": "https://images.pexels.com/photos/794064/pexels-photo-794064.jpeg?cs=srgb&dl=pexels-godisable-jacob-226636-794064.jpg&fm=jpg"
+        },
+        {
+          "product_images": "https://www.stylecraze.com/wp-content/uploads/2018/01/Fashion-Tips-Every-Girl_1200px.jpg.webp"
+        },
+        {
+          "product_images": "https://plus.unsplash.com/premium_photo-1658506787944-7939ed84aaf8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVuJTIwZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D"
+        }
       ],
-      "product_price": "292",
-      "product_available": true
-    },
-    {
-      "message_text": "Delectus ducimus u",
-      "product_name": "Serena Abbott",
-      "product_image": "https://au.kowtowclothing.com/cdn/shop/files/classic_tee-white-8_df0366f7-2cd0-4974-ac0c-c1e205b10b47.jpg?v=1754276209&width=1445",
-      "product_price": "868",
+      "product_sizes": [
+        "S",
+        "M"
+      ],
       "product_available": true,
-      "product_sizes": [
-        "s",
-        "m"
-      ]
+      "product_price": "123$"
     },
     {
-      "message_text": "Aut eaque excepteur ",
-      "product_name": "Carl Stark",
-      "product_sizes": [
-        "Quae officia obcaeca",
-        "Esse eiusmod aut sit"
+      "product_name": "tshirt",
+      "product_images": [
+        {
+          "product_images": "https://www.stylecraze.com/wp-content/uploads/2018/01/Fashion-Tips-Every-Girl_1200px.jpg.webp"
+        },
+        {
+          "product_images": "https://plus.unsplash.com/premium_photo-1658506787944-7939ed84aaf8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVuJTIwZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D"
+        }
       ],
-      "product_price": "650",
-      "product_image": "https://au.kowtowclothing.com/cdn/shop/files/classic_tee-white-8_df0366f7-2cd0-4974-ac0c-c1e205b10b47.jpg?v=1754276209&width=1445",
-      "product_available": true
-    },
-    {
-      "message_text": "Message us!",
-      "product_name": "Nike",
-      "product_image": "https://trendygolf.com/cdn/shop/collections/Collection_Page_nike.jpg?v=1707133607",
+      "product_sizes": [
+        "S",
+        "M"
+      ],
       "product_available": true,
-      "product_sizes": [
-        "s",
-        "m"
-      ],
-      "product_price": "241$"
+      "product_price": "32$"
     }
   ],
   "message_text": "Message us!",
