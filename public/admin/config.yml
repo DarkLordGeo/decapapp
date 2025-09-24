@@ -145,9 +145,14 @@ collections:
               - label: "Product Name"
                 name: "product_name"
                 widget: "string"
-              - label: "Product image"
-                name: "product_image"
-                widget: "image"
+              - label: "Product images"
+                name: "product_images"
+                widget: "list"
+                max: 4
+                fields:
+                  - label: "Product image"
+                    name: "product_images"
+                    widget: "image"
               - label: "Product sizes"
                 name: "product_sizes"
                 widget: "list"

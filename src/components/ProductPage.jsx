@@ -11,8 +11,8 @@ function ProductPage() {
 
 
     useEffect(() => {
-        window.scroll(0,0)
-    },[])
+        window.scroll(0, 0)
+    }, [])
 
 
     return (
@@ -32,7 +32,6 @@ function ProductPage() {
                                 {product_data?.product_list[id]?.product_name}
                             </h1>
                         </div>
-
                         {/* size */}
                         <div>
                             <ul className='flex gap-6'>
@@ -54,7 +53,6 @@ function ProductPage() {
                                 {product_data?.product_list[id]?.product_available ? 'in stock' : 'in stock'}
                             </h2>
                         </div>
-
                         {/* price */}
                         <div>
                             <p className='text-4xl cursor-pointer hover:underline'>
@@ -70,8 +68,6 @@ function ProductPage() {
 
                             </button>
                         </div>
-
-
                     </div>
                 </div>
 

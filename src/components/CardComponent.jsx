@@ -1,13 +1,18 @@
-import { useNavigate } from 'react-router'
+import { useLocation, useNavigate, useParams } from 'react-router'
 import products from '/src/content/products/products.json'
 function CardComponent() {
     const navigate = useNavigate()
+    const location = useLocation()
+    console.log(location.pathname);
+    
+
+    
     return (
         <>
             {products.product_list?.map((item, key) => (
                 <div className="flex w-5/6 h-full flex-col items-center justify-center bg-white"
                     key={key}
-                    onClick={() => navigate(`product/${key}`, { state: products })}
+                    onClick={() => navigate(`${location.pathname === '/catalog' ? `/catalog/product/${key}` : `product/${key}`}`, { state: products })}
                 >
                     <a className='overflow-hidden cursor-pointer w-full flex items-center justify-center'>
                         <img
