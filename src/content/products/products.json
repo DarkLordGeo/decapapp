@@ -1,0 +1,42 @@
+{
+  "message_text": "Message us",
+  "inbox_link": "https://www.youtube.com/watch?v=GaB9F3R9cIY&list=RD_yer-9MCQG0&index=25",
+  "product_list": [
+    {
+      "product_name": "shirt",
+      "product_present_image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D",
+      "product_images": [
+        {
+          "product_images": "https://cdn.pixabay.com/photo/2025/03/12/09/59/fashion-9464875_1280.jpg"
+        },
+        {
+          "product_images": "https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?cs=srgb&dl=pexels-kowalievska-1055691.jpg&fm=jpg"
+        }
+      ],
+      "product_sizes": [
+        "S",
+        "M"
+      ],
+      "product_available": true,
+      "product_price": "450$"
+    },
+    {
+      "product_name": "trousers ",
+      "product_present_image": "https://burst.shopifycdn.com/photos/fashion-model-in-pink.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+      "product_images": [
+        {
+          "product_images": "https://cdn.pixabay.com/photo/2024/11/08/05/28/man-9182458_1280.jpg"
+        },
+        {
+          "product_images": "https://media.istockphoto.com/id/1307568521/photo/its-the-denim-that-does-it-for-me.jpg?s=612x612&w=0&k=20&c=0RQfpn8VJxXl6sO4aUehTsPvyYKGPwVwz1EdJRBU_Nw="
+        }
+      ],
+      "product_sizes": [
+        "M",
+        "XL"
+      ],
+      "product_available": true,
+      "product_price": "50$"
+    }
+  ]
+}
