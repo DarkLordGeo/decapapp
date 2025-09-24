@@ -1,0 +1,51 @@
+{
+  "product_list": [
+    {
+      "message_text": "Exercitation asperio",
+      "product_image": "https://americantall.com/cdn/shop/products/American-Tall-Men-Essential-SLIM-FIT-Crew-Neck-Tees-White-front.jpg?v=1673367625",
+      "product_name": "Nadine House",
+      "product_sizes": [
+        "Corporis eiusmod aut",
+        "Similique eius nisi ",
+        "Vel voluptate assume"
+      ],
+      "product_price": "292",
+      "product_available": true
+    },
+    {
+      "message_text": "Delectus ducimus u",
+      "product_name": "Serena Abbott",
+      "product_image": "https://au.kowtowclothing.com/cdn/shop/files/classic_tee-white-8_df0366f7-2cd0-4974-ac0c-c1e205b10b47.jpg?v=1754276209&width=1445",
+      "product_price": "868",
+      "product_available": true,
+      "product_sizes": [
+        "s",
+        "m"
+      ]
+    },
+    {
+      "message_text": "Aut eaque excepteur ",
+      "product_name": "Carl Stark",
+      "product_sizes": [
+        "Quae officia obcaeca",
+        "Esse eiusmod aut sit"
+      ],
+      "product_price": "650",
+      "product_image": "https://au.kowtowclothing.com/cdn/shop/files/classic_tee-white-8_df0366f7-2cd0-4974-ac0c-c1e205b10b47.jpg?v=1754276209&width=1445",
+      "product_available": true
+    },
+    {
+      "message_text": "Message us!",
+      "product_name": "Nike",
+      "product_image": "https://trendygolf.com/cdn/shop/collections/Collection_Page_nike.jpg?v=1707133607",
+      "product_available": true,
+      "product_sizes": [
+        "s",
+        "m"
+      ],
+      "product_price": "241$"
+    }
+  ],
+  "message_text": "Message us!",
+  "inbox_link": "https://www.youtube.com/watch?v=a5uQMwRMHcs&list=RDsmSSSs46rng&index=8"
+}
