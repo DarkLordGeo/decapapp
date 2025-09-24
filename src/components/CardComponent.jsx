@@ -1,12 +1,7 @@
-import { useLocation, useNavigate, useParams } from 'react-router'
+import { useNavigate } from 'react-router'
 import products from '/src/content/products/products.json'
 function CardComponent() {
-
-    // console.log(products);
-
     const navigate = useNavigate()
-    console.log(products);
-
     return (
         <>
             {products.product_list?.map((item, key) => (

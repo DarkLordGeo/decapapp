@@ -1,7 +1,5 @@
 import { useLocation, useNavigate, useParams } from "react-router"
 import BackgroundSection from "./BackgroundSection"
-
-import products from '/src/content/products/products.json'
 import { useEffect, useState } from "react"
 
 function ProductPage() {
@@ -18,7 +16,7 @@ function ProductPage() {
 
     return (
         <>
-            <BackgroundSection height="auto" imageUrl={'https://eigensinnig-wien.com/cdn/shop/files/all-black-women-outfits-eigensinnig-wien.webp?v=1738449239'}>
+            <BackgroundSection height="auto">
                 <div className="w-3/4 relative flex flex-col lg:flex-row bg-white gap-6 lg:gap-12 !px-6 !pt-10 !pb-8 !mt-42 !mb-32 rounded-xl justify-evenly">
                     {/* image */}
                     <div className='flex flex-col justify-center items-center gap-12'>
@@ -94,7 +92,7 @@ function ProductPage() {
                             </button>
                         </div>
                     </div>
-                    
+
                 </div>
 
 
