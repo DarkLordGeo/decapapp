@@ -37,6 +37,25 @@
       ],
       "product_available": true,
       "product_price": "50$"
+    },
+    {
+      "product_name": "tee",
+      "product_present_image": "https://freshcleantees.com/cdn/shop/files/CREWNECKSWhite.jpg?v=1714778132",
+      "product_images": [
+        {
+          "product_images": "https://au.kowtowclothing.com/cdn/shop/files/classic_tee-white-8_df0366f7-2cd0-4974-ac0c-c1e205b10b47.jpg?v=1754276209&width=1445"
+        },
+        {
+          "product_images": "https://duer.ca/cdn/shop/files/Pima_Tee-White_0141-801592.jpg?v=1716653480"
+        }
+      ],
+      "product_sizes": [
+        "M",
+        "L"
+      ],
+      "product_available": true,
+      "product_price": "1200$"
     }
-  ]
+  ],
+  "product_page_header": "Greatest deals!"
 }
