@@ -11,16 +11,13 @@ function Contact() {
         setResult("Sending....");
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "414fc166-0dcb-45e4-9c03-80dad43e0b23");
-
+        formData.append("access_key", "");
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
             body: formData
         });
-
         const data = await response.json();
-
         if (data.success) {
             setResult("Form Submitted Successfully");
             event.target.reset();
@@ -29,7 +26,6 @@ function Contact() {
             setResult(data.message);
         }
     };
-
 
     return (
         <>
