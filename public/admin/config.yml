@@ -82,6 +82,7 @@ collections:
                   - label: "Product availability"
                     name: "product_available"
                     widget: "boolean"
+                    required: false
 
                   - label: "Product price"
                     name: "product_price"
