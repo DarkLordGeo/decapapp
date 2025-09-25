@@ -55,6 +55,25 @@
       ],
       "product_available": true,
       "product_price": "1200$"
+    },
+    {
+      "product_name": "Tshirt",
+      "product_present_image": "https://framerusercontent.com/images/c64XH5vYyhyP1jV68mj6ByxAz4.png",
+      "product_images": [
+        {
+          "product_images": "https://shop.vogue.co.uk/cdn/shop/products/Vogue_T-Shirt_black_2.jpg?v=1684164309&width=1080"
+        },
+        {
+          "product_images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQii0-XZbe_sli-wZey60tpApJlHEnacxZdtQ&s"
+        }
+      ],
+      "product_sizes": [
+        "M",
+        "S",
+        "XL"
+      ],
+      "product_available": true,
+      "product_price": "350$"
     }
   ],
   "product_page_header": "Greatest deals!"
