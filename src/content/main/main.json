@@ -1,6 +1,6 @@
 {
-  "main_page_header": "Officia dolor est m",
-  "main_page_text": "Do elit est ipsam a",
+  "main_page_header": "Suscipit quis assume",
+  "main_page_text": "Aliquip quisquam aut",
   "main_page_background": "https://images.unsplash.com/photo-1483985988355-763728e1935b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D",
   "main_page_products_list": [
     {
@@ -15,5 +15,52 @@
     {
       "main_page_product_list": "test"
     }
-  ]
+  ],
+  "main_page_products": {
+    "message_text": "Provident dolor qui",
+    "inbox_link": "Mollit magnam est fu",
+    "product_page_header": "Dolor voluptatum ear",
+    "product_list": [
+      {
+        "product_name": "Cailin Flores",
+        "product_price": "562 $",
+        "product_sizes": [
+          "s",
+          "m",
+          "xl"
+        ],
+        "product_images": [
+          {
+            "product_images": "https://www.headsweats.com/cdn/shop/products/7700-401_RACEHAT_WHITEWOVEN.RF.jpg?v=1657296557"
+          },
+          {
+            "product_images": "https://thebowlsshop.com/media/catalog/product/cache/a4503f39e6ca1fe137cc0e8f0b4d0302/o/n/one-up_white_fedora_bowls_hat_b630.jpg"
+          }
+        ],
+        "product_present_image": "https://www.cancercouncilshop.org.au/cdn/shop/files/RM399Whiteangle.jpg?v=1696308000&width=1080",
+        "product_available": true
+      },
+      {
+        "product_name": "asdsaadas",
+        "product_present_image": "https://images.napali.app/global/element-products/all/default/xlarge/eljdp00106_element,f_bnt0_frt1.jpg",
+        "product_images": [
+          {
+            "product_images": "https://shopfromcrisis.org.uk/cdn/shop/files/42488558-0ff6-4d32-92a1-fc9cbd15a345.jpg?v=1732626663"
+          },
+          {
+            "product_images": "https://i.etsystatic.com/6980671/r/il/e20ed8/890979465/il_570xN.890979465_rioo.jpg"
+          }
+        ],
+        "product_sizes": [
+          "m",
+          "s",
+          "l",
+          "xl",
+          "2xl"
+        ],
+        "product_available": true,
+        "product_price": "800$"
+      }
+    ]
+  }
 }
