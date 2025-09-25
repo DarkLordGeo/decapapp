@@ -1,6 +1,7 @@
 
 import BackgroundSection from "./BackgroundSection"
 import ProductCards from "./ProductCards"
+import MainCardComponent from "./MainCardComponent"
 import main from '/src/content/main/main.json'
 
 function MainPage() {
@@ -24,6 +25,7 @@ function MainPage() {
                 </div>
             </BackgroundSection>
             <ProductCards />
+            <MainCardComponent/>
         </>
     )
 }

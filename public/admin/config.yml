@@ -37,6 +37,55 @@ collections:
           - label: "Main page background"
             name: "main_page_background"
             widget: "image"
+          - label: "Main Page Products"
+            name: "main_page_products"
+            fields:
+              - label: "Product list"
+                name: "product_list"
+                widget: "list"
+                min: 3
+                fields:
+                  - label: "Product Name"
+                    name: "product_name"
+                    widget: "string"
+                  - label: "Product present image"
+                    name: "product_present_image"
+                    widget: "image"
+                  - label: "Product images"
+                    name: "product_images"
+                    widget: "list"
+                    max: 3
+                    min: 2
+                    fields:
+                      - label: "Product image"
+                        name: "product_images"
+                        widget: "image"
+                  - label: "Product sizes"
+                    name: "product_sizes"
+                    widget: "list"
+                    min: 1
+                    max: 5
+                    field:
+                      label: "Size"
+                      name: "size"
+                      widget: "string"
+                  - label: "Product availability"
+                    name: "product_available"
+                    widget: "boolean"
+                  - label: "Product price"
+                    name: "product_price"
+                    widget: "string"
+              - label: "Message button"
+                name: "message_text"
+                default: "Message us!"
+                widget: "string"
+              - label: "Inbox link"
+                name: "inbox_link"
+                widget: "string"
+              - label: "Product page header"
+                name: "product_page_header"
+                widget: "string"
+  
   # About Page
   - name: "about_page"
     label: "About Page"

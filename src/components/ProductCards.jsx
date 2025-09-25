@@ -1,7 +1,7 @@
 import CardComponent from "./CardComponent"
 import products from '/src/content/products/products.json'
-function ProductCards() {
 
+function ProductCards() {
 
     return (
         <>
