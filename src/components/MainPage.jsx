@@ -24,7 +24,7 @@ function MainPage() {
                     </div>
                 </div>
             </BackgroundSection>
-            <ProductCards />
+            {/* <ProductCards /> */}
             <MainCardComponent/>
         </>
     )

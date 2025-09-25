@@ -56,9 +56,9 @@ function ProductPage() {
                                 {product_data?.product_list[id]?.product_name}
                             </h1>
                         </div>
-                        {/* size */}
+                        {/* sizes */}
                         <div>
-                            <ul className='flex gap-6'>
+                            <ul className='flex gap-6 flex-wrap'>
                                 {product_data?.product_list[id]?.product_sizes?.map((item, key) => (
                                     <li className='w-12 h-12 text-center flex items-center justify-center rounded-full bg-gray-400/50 text-xl' key={key}>{item}</li>
                                 ))}
@@ -70,8 +70,8 @@ function ProductPage() {
                                 font-bold
                                 text-center
                                 ${product_data?.product_list[id]?.product_available
-                                    ? `text-gray-900 line-through `
-                                    : `text-green-800`
+                                    ? `text-green-800 `
+                                    : `text-gray-900 line-through`
                                 }
                             }`}>
                                 {product_data?.product_list[id]?.product_available ? 'in stock' : 'in stock'}
@@ -94,8 +94,6 @@ function ProductPage() {
                     </div>
 
                 </div>
-
-
             </BackgroundSection>
         </>
     )

@@ -28,8 +28,8 @@ function CardComponent() {
                             text-sm font-bold
                             text-center
                             ${item.product_available
-                                    ? `text-gray-900 line-through `
-                                    : `text-green-800`
+                                    ? `text-green-800 `
+                                    : `text-gray-900 line-through `
                                 }
                              
                             `}>
