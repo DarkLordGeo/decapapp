@@ -12,6 +12,7 @@ editor:
 
 collections:
   # Main Page
+
   - name: "main_page"
     label: "Main Page"
     files:
@@ -22,9 +23,11 @@ collections:
           - label: "Main page header"
             name: "main_page_header"
             widget: "string"
+
           - label: "Main page text"
             name: "main_page_text"
             widget: "string"
+
           - label: "Main page available products"
             name: "main_page_products_list"
             widget: "list"
@@ -34,11 +37,14 @@ collections:
               - label: "Product list"
                 name: "main_page_product_list"
                 widget: "string"
+
           - label: "Main page background"
             name: "main_page_background"
             widget: "image"
+
           - label: "Main Page Products"
             name: "main_page_products"
+            widget: "object"   
             fields:
               - label: "Product list"
                 name: "product_list"
@@ -48,9 +54,11 @@ collections:
                   - label: "Product Name"
                     name: "product_name"
                     widget: "string"
+
                   - label: "Product present image"
                     name: "product_present_image"
                     widget: "image"
+
                   - label: "Product images"
                     name: "product_images"
                     widget: "list"
@@ -60,33 +68,42 @@ collections:
                       - label: "Product image"
                         name: "product_images"
                         widget: "image"
+
                   - label: "Product sizes"
                     name: "product_sizes"
                     widget: "list"
                     min: 1
                     max: 5
-                    field:
+                    field:     
                       label: "Size"
                       name: "size"
                       widget: "string"
+
                   - label: "Product availability"
                     name: "product_available"
                     widget: "boolean"
+
                   - label: "Product price"
                     name: "product_price"
                     widget: "string"
+
               - label: "Message button"
                 name: "message_text"
                 default: "Message us!"
                 widget: "string"
+
               - label: "Inbox link"
                 name: "inbox_link"
                 widget: "string"
+
               - label: "Product page header"
                 name: "product_page_header"
                 widget: "string"
+
   
   # About Page
+  
+  # about  page
   - name: "about_page"
     label: "About Page"
     files:
@@ -100,7 +117,6 @@ collections:
           - label: "About page description"
             name: "about_page_description"
             widget: "text"
-
   # Contact Page
   - name: "contact_page"
     label: "Contact Page"
