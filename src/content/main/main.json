@@ -77,7 +77,8 @@
           "m",
           "xl"
         ],
-        "product_price": "2300$"
+        "product_price": "2300$",
+        "product_available": true
       }
     ]
   }
