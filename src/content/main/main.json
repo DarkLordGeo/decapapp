@@ -38,7 +38,7 @@
           }
         ],
         "product_present_image": "https://www.cancercouncilshop.org.au/cdn/shop/files/RM399Whiteangle.jpg?v=1696308000&width=1080",
-        "product_available": true
+        "product_available": false
       },
       {
         "product_name": "asdsaadas",
@@ -60,6 +60,24 @@
         ],
         "product_available": true,
         "product_price": "800$"
+      },
+      {
+        "product_name": "asdasdasdasdsd",
+        "product_present_image": "https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_800,w_800/clothing_women_tcc_d_244eda5eaf.jpg",
+        "product_images": [
+          {
+            "product_images": "https://i.ebayimg.com/images/g/Lg8AAOSwbLBl45uA/s-l1600.webp"
+          },
+          {
+            "product_images": "https://i.ebayimg.com/images/g/o~cAAOSwbXll39dk/s-l1600.webp"
+          }
+        ],
+        "product_sizes": [
+          "s",
+          "m",
+          "xl"
+        ],
+        "product_price": "2300$"
       }
     ]
   }
